@@ -347,6 +347,8 @@ Patch Notes V ALPHA.22.02.20
 			///  DATTEBAYO ONLINE  ///
 		   //////////////////////////	
 		       
+			   
+Testando pra ver a eficiência dessa merda
 		     
 
 				
