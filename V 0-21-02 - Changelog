@@ -1,0 +1,168 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////															    										  /////
+////      //////    //\\     /////////  ////////  //   //     /\    //  /////// ///////  /////   //////		 /////
+////     //   //   //  \\       //     //        //   //     //\\  //  //   //    //	//	    //	        /////
+////    ///////   // // \\     //     //        ///////     //  \\//  //   //    //    /////   //////	   /////
+////   //        //      \\   //     //        //   //     //    \/  //	  //	//    //		  //      /////
+////  //        //        \\ //     ///////// //   //     //        ///////	   //	 /////   //////		 /////   
+////													      									        /////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+____________________________________
+Patch Notes V0.21.02.15
+
+			///////////////////
+			//     CONF      //
+			///////////////////
+			
+(A) Atualizações do servidor Login_CONF:
+
+	(1) - Desabilitada a criação de contas via _M e _F
+	
+	
+____________________________________
+Patch Notes V0.21.02.18
+
+			///////////////////
+			//     CONF      //
+			///////////////////
+			
+			
+(A) Atualizações Emulador / Conf:
+
+	(1) Alterada o mapa "padrão" de prontera para louyang(academia shinobi)
+	
+	// Default map if character is in not-existing map when loaded.
+	default_map: louyang
+	default_map_x: 217
+	default_map_y: 68	
+	
+	(2) Alterado o mapa inicial para Louyang ( Academia Shinobi )
+	start_point: louyang,217,68
+	
+(B) Atualizações Mapa Mundo:
+	
+	(1) Alterada Pay_gld para louyang (academia Ninja) 
+	(2) Adicionado as Legendas no mini-mapa da Academia 
+	
+____________________________________
+Patch Notes V0.21.02.20
+
+			 /////////////////////////
+			// DATTEBAYO ONLINE  ////
+		   /////////////////////////
+			
+(A) Atualizações Mapa Mundo:
+	
+	(1) Iniciado processo de finalização da academia shinobi 
+	(2) Criado os portais de entrada e saida da academia e suas respectivadas Salas sendo elas:
+			* Biblioteca
+			* Academia
+			* Estalagem
+			* Ferreiro
+			* Sala de Treino
+			
+	(3) Implementado trabalhos antigos de criação de portais e entradas de instancias e dungeons.
+	
+(B) Atualizações Emulador:
+
+	(1) Iniciada a Limpeza dos NPC'S para que seja realizado processo do 0 de implementação passo-a-passo
+	(2) Corrigido bugs de inconsistencias relacionado a certos scripts e NPC's em geral
+	
+	
+(C) Atualização Cliente-Side
+
+	(1) Adicionado no mapnametable os novos mapas adicionados sendo eles:
+		*Acad_01
+		*Treinamento
+		*lou_in02
+		*academia
+		
+	(2) Correções relacionadas a legenda no mapa *louyang* Academia Shinobi
+		* Alterado "Ramen" para "Estalagem"
+		
+
+____________________________________
+Patch Notes V ALPHA.21.02.20-02
+
+			 //////////////////////////
+			///  DATTEBAYO ONLINE  ///
+		   //////////////////////////
+
+Atualizações Mapa Mundo:
+
+	(A) Pais do Fogo:
+
+			(1) Criada a Estalagem no templo do fogo
+			(2) Corrigida descrição do mapa ama_in01 para "Interiores do pais do fogo"
+			(3) Criada uma sala Secundaria na Estalagem do Templo do fogo para quests
+
+	(B) Pais da chuva:
+
+			(1) Adicionado o "Bar dos seis Caminhos" ao mapa mundi e seus portais
+			(2) Criado a sala privada para "nukenins" no "Bar dos seis Caminhos"
+			
+	(C) Pais do Som
+			
+			(1) Adicionado mapa Ayo_dun01 como sub solo 1.
+			
+	(C) Academia Shinobi:
+
+			(1) Criado portais de entrada e saida da Academia Shinobi (Ela irá possuir apenas 1 saida e entrada) com requisitos sendo eles:
+			
+				* Possuir pelo menos a Bandana Shinobi para sair da academia
+				
+	(D) Geral:
+
+			(1) Corrigido os portais de acessos a lugares importantes e adicionado a opção "Não receber mais essa mensagem" em todos após cumprir os requisitos:
+			
+				* Essa opção elimina a necessidade de um proximo dialogo ao utilizar o portal.
+				
+	(E) Legendas:
+				
+			(1) Criada legendas de mini-mapa para a Estalagem do templo do fogo e do Bar dos seis caminhos.
+			
+Atualizações Emulador:
+
+	(A) NPC's:
+
+			(1) Adicionados na Pasta mapamundi/warp/cidades os seguintes arquivos:
+			
+				*chuva.txt
+				*isto.txt
+				*ursos.txt
+			
+			(2) Adicionados na Pasta mapamundi/warp/dungeons os seguintes arquivos:
+			
+				*esconderijodosom.txt
+				*piramideshukaku.txt
+				*templodofogo.txt
+			
+			(3) Adicionados na Pasta mapamundi/warp/fields os seguintes arquivos:
+			
+				*paisdofogo.txt
+				*paisdorio.txt
+				*paisdovento.txt
+			
+			(4) Adicionados na Pasta mapamundi/warp/others os seguintes arquivos:
+			
+				*florestadamorte.txt (Desativado)
+				*memorial.txt (Desativado
+			
+Atualizações Client-Side:
+			
+	(A) Worldviewdata - Mapa Mundi
+
+			(1) Removido mapa ein_in01
+
+	(B) Texture/Map
+
+			(1) Adicionada a texture do mapa ayo_dun01
+
+____________________________________
+Patch Notes V ALPHA.22.02.20
+
+			 //////////////////////////
+			///  DATTEBAYO ONLINE  ///
+		   //////////////////////////	
