@@ -341,8 +341,20 @@ Atualizações Client-Side:
 			(1) Adicionada a texture do mapa ayo_dun01
 
 			
+<<<<<<< HEAD
 	
 teste 1
+=======
+____________________________________
+Patch Notes V ALPHA.22.02.20
+
+			 //////////////////////////
+			///  DATTEBAYO ONLINE  ///
+		       //////////////////////////	
+		       
+		     
+
+>>>>>>> e45b2a1cee7032e9894617b23da3b2c31855539b
 
 				
 			
