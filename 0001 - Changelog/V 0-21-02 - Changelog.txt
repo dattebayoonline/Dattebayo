@@ -161,8 +161,132 @@ Atualizações Client-Side:
 			(1) Adicionada a texture do mapa ayo_dun01
 
 ____________________________________
-Patch Notes V ALPHA.22.02.20
+Patch Notes V ALPHA.24.02.20
 
 			 //////////////////////////
 			///  DATTEBAYO ONLINE  ///
 		   //////////////////////////	
+		   
+Atualizações Mapa Mundo:
+
+			(A) Iniciado processo de implementação dos NPC's de Serviços nos mapas:
+				(A.1) Academia: [ ] Armazem
+								[ ] Estalagem (save Point)
+								[ ] Curandeira
+								[ ] Estilista
+								[ ] Resetadora
+								[ ] Teleportadora (Cidade)
+								[ ] Viajante ( Fields )
+								[ ] Placas
+								[ ] Refinadora
+								[ ] Restauradora (Itens)
+								[ ] Removedor de Encantamentos ( Cartas )
+				
+				(A.2) Konoha: [ ] Armazem
+								[ ] Estalagem (save Point)
+								[ ] Curandeira
+								[ ] Estilista
+								[ ] Resetadora
+								[ ] Teleportadora (Cidade)
+								[ ] Viajante ( Fields )
+								[ ] Placas
+								[ ] Refinadora
+								[ ] Restauradora (Itens)
+								[ ] Removedor de Encantamentos ( Cartas )
+								
+				(A.3) Suna: 	[ ] Armazem
+								[ ] Estalagem (save Point)
+								[ ] Curandeira
+								[ ] Estilista
+								[ ] Resetadora
+								[ ] Teleportadora (Cidade)
+								[ ] Viajante ( Fields )
+								[ ] Placas
+								[ ] Refinadora
+								[ ] Restauradora (Itens)
+								[ ] Removedor de Encantamentos ( Cartas )								
+	
+				(A.4) Isto: 	[ ] Armazem	
+								[ ] Estalagem (save Point)
+								[ ] Curandeira
+								[ ] Estilista
+								[ ] Resetadora
+								[ ] Teleportadora (Cidade)
+								[ ] Viajante ( Fields )
+								[ ] Placas
+								[ ] Refinadora
+								[ ] Restauradora (Itens)
+								[ ] Removedor de Encantamentos ( Cartas )
+								
+				(A.5) Ursos: 	[ ] Armazem	
+								[ ] Estalagem (save Point)
+								[ ] Curandeira
+								[ ] Estilista
+								[ ] Resetadora
+								[ ] Placas
+
+
+Atualizações do Emulador:
+
+		(A) Criado Conceito de prestação de serviços do NPC com a seguinte formula:
+			(1) NPC's Reconhecem qual player possui "VIP ou "Passe de Comerciante" e fornecendo os beneficios que cada um possui.
+			
+				* VIP: Não paga e recebe serviços mais rapidamente
+				* Passe de comerciante: Possui desconto de 50% na prestação de serviços porem o serviço tem o mesmo tempo de aplicação que um player comum
+				* O NPC sempre vai priorizar o melhor beneficio seguindo a logica.
+						¹ VIP
+						² Passe					
+						³ FREE
+						
+			(2) NPC fornece uma msg privada de agradecimento a quem ajuda o servidor com VIP
+			(3) NPC's possuem um sistema de cobrança e desconto de fácil aplicação e modificação
+			
+		(B) IAdicionado ao Emulador na pasta npc/re/mapamundi/cidades os Seguintes NPC's
+			(1) NPC's Serviço
+		
+				*Armazem
+				*Curandeira
+				*Estilista
+				*Estalagem
+				*Placas
+				*Resetadora
+				*Teleportadora
+				*Viajante
+			
+			(2) NPC's merchant
+				
+				*Cash Shop ( Testes )
+				*lojinhas ( Mercadores do servidor)
+				
+			(3) VIP
+			
+				*Basico VIP
+				*Renomear
+				*Troca Bandana
+				*Troca de Mascara
+				*Vale ROPS
+				*Estilista
+		
+Atualizações do Discord:		
+			
+			(A) Iniciado processo de Criação do Discord
+			(B) Formulada a base de criação do discord do servidor com base no discord "Genshin Impact"
+			(C) Criação de um BOT Exclusivo do servidor:
+			(C.1) Atualizações do BOT DATTEBAYO ( Discord ):
+				(1) Criado em 21/02/2021
+				(2) Adicionado comando "SAY"			
+				(3) Dattebayo BOT:
+					¹ ELe irá fazer as postagens relacionadas ao serviro
+					² Irá Realizar postagens Embed 
+					² Servira de SUPORTE E FAQ para os players
+					
+			(D) Criado um modelo de postagem de patch notes no servidor.
+			
+			(C.1) Atualizações do BOT DATTEBAYO ( Discord ):
+
+			(A) Criado em 21/02/2021
+			(B) Adicionado comando "SAY"
+			
+
+			
+		
