@@ -1,0 +1,85 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////															    										  /////
+////      //////    //\\     /////////  ////////  //   //     /\    //  /////// ///////  /////   //////		 /////
+////     //   //   //  \\       //     //        //   //     //\\  //  //   //    //	//	    //	        /////
+////    ///////   // // \\     //     //        ///////     //  \\//  //   //    //    /////   //////	   /////
+////   //        //      \\   //     //        //   //     //    \/  //	  //	//    //		  //      /////
+////  //        //        \\ //     ///////// //   //     //        ///////	   //	 /////   //////		 /////   
+////													      									        /////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+____________________________________
+Patch Notes V ALPHA.20.02.2021( Parte 2)
+
+			 //////////////////////////
+			///  DATTEBAYO ONLINE  ///
+		   //////////////////////////
+
+Atualizações Mapa Mundo:
+
+	(A) Pais do Fogo:
+
+			(1) Criada a Estalagem no templo do fogo
+			(2) Corrigida descrição do mapa ama_in01 para "Interiores do pais do fogo"
+			(3) Criada uma sala Secundaria na Estalagem do Templo do fogo para quests
+
+	(B) Pais da chuva:
+
+			(1) Adicionado o "Bar dos seis Caminhos" ao mapa mundi e seus portais
+			(2) Criado a sala privada para "nukenins" no "Bar dos seis Caminhos"
+			
+	(C) Pais do Som
+			
+			(1) Adicionado mapa Ayo_dun01 como sub solo 1.
+			
+	(C) Academia Shinobi:
+
+			(1) Criado portais de entrada e saida da Academia Shinobi (Ela irá possuir apenas 1 saida e entrada) com requisitos sendo eles:
+			
+				* Possuir pelo menos a Bandana Shinobi para sair da academia
+				
+	(D) Geral:
+
+			(1) Corrigido os portais de acessos a lugares importantes e adicionado a opção "Não receber mais essa mensagem" em todos após cumprir os requisitos:
+			
+				* Essa opção elimina a necessidade de um proximo dialogo ao utilizar o portal.
+				
+	(E) Legendas:
+				
+			(1) Criada legendas de mini-mapa para a Estalagem do templo do fogo e do Bar dos seis caminhos.
+			
+Atualizações Emulador:
+
+	(A) NPC's:
+
+			(1) Adicionados na Pasta mapamundi/warp/cidades os seguintes arquivos:
+			
+				*chuva.txt
+				*isto.txt
+				*ursos.txt
+			
+			(2) Adicionados na Pasta mapamundi/warp/dungeons os seguintes arquivos:
+			
+				*esconderijodosom.txt
+				*piramideshukaku.txt
+				*templodofogo.txt
+			
+			(3) Adicionados na Pasta mapamundi/warp/fields os seguintes arquivos:
+			
+				*paisdofogo.txt
+				*paisdorio.txt
+				*paisdovento.txt
+			
+			(4) Adicionados na Pasta mapamundi/warp/others os seguintes arquivos:
+			
+				*florestadamorte.txt (Desativado)
+				*memorial.txt (Desativado
+			
+Atualizações Client-Side:
+			
+	(A) Worldviewdata - Mapa Mundi
+
+			(1) Removido mapa ein_in01
+
+	(B) Texture/Map
+
+			(1) Adicionada a texture do mapa ayo_dun01

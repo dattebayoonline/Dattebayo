@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////															    										  /////
+////      //////    //\\     /////////  ////////  //   //     /\    //  /////// ///////  /////   //////		 /////
+////     //   //   //  \\       //     //        //   //     //\\  //  //   //    //	//	    //	        /////
+////    ///////   // // \\     //     //        ///////     //  \\//  //   //    //    /////   //////	   /////
+////   //        //      \\   //     //        //   //     //    \/  //	  //	//    //		  //      /////
+////  //        //        \\ //     ///////// //   //     //        ///////	   //	 /////   //////		 /////   
+////													      									        /////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+____________________________________
+Patch Notes V ALPHA.20.02.2021
+
+			 /////////////////////////
+			// DATTEBAYO ONLINE  ////
+		   /////////////////////////
+			
+(A) Atualizações Mapa Mundo:
+	
+	(1) Iniciado processo de finalização da academia shinobi 
+	(2) Criado os portais de entrada e saida da academia e suas respectivadas Salas sendo elas:
+			* Biblioteca
+			* Academia
+			* Estalagem
+			* Ferreiro
+			* Sala de Treino
+			
+	(3) Implementado trabalhos antigos de criação de portais e entradas de instancias e dungeons.
+	
+(B) Atualizações Emulador:
+
+	(1) Iniciada a Limpeza dos NPC'S para que seja realizado processo do 0 de implementação passo-a-passo
+	(2) Corrigido bugs de inconsistencias relacionado a certos scripts e NPC's em geral
+	
+	
+(C) Atualização Cliente-Side
+
+	(1) Adicionado no mapnametable os novos mapas adicionados sendo eles:
+		*Acad_01
+		*Treinamento
+		*lou_in02
+		*academia
+		
+	(2) Correções relacionadas a legenda no mapa *louyang* Academia Shinobi
+		* Alterado "Ramen" para "Estalagem"
+		

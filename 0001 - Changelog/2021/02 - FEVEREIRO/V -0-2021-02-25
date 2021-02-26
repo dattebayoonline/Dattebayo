@@ -1,0 +1,116 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////															    										  /////
+////      //////    //\\     /////////  ////////  //   //     /\    //  /////// ///////  /////   //////		 /////
+////     //   //   //  \\       //     //        //   //     //\\  //  //   //    //	//	    //	        /////
+////    ///////   // // \\     //     //        ///////     //  \\//  //   //    //    /////   //////	   /////
+////   //        //      \\   //     //        //   //     //    \/  //	  //	//    //		  //      /////
+////  //        //        \\ //     ///////// //   //     //        ///////	   //	 /////   //////		 /////   
+////													      									        /////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+_____________________________
+Patch Notes V ALPHA.25.02.2021
+
+			 //////////////////////////
+			///  DATTEBAYO ONLINE  ///
+		   //////////////////////////	
+		   
+(1) Atualizações Mapa Mundo:
+
+			(A) Iniciado processo de implementação dos NPC's de Serviços nos mapas:
+				(A.1) Academia: [X] Armazem
+								[X] Estalagem (save Point)
+								[X] Curandeira
+								[ ] Estilista
+								[ ] Resetadora
+								[ ] Teleportadora (Cidade)
+								[ ] Viajante ( Fields )
+								[ ] Placas
+								[ ] Refinadora Basica
+								[ ] Restauradora (Itens)
+				
+				(A.2) Konoha: [ ] Armazem
+								[ ] Estalagem (save Point)
+								[ ] Curandeira
+								[ ] Estilista
+								[ ] Resetadora
+								[ ] Teleportadora (Cidade)
+								[ ] Viajante ( Fields )
+								[ ] Placas
+								[ ] Refinadora Basica
+								[ ] Restauradora (Itens)
+								
+				(A.3) Suna: 	[ ] Armazem
+								[ ] Estalagem (save Point)
+								[ ] Curandeira
+								[ ] Estilista
+								[ ] Resetadora
+								[ ] Teleportadora (Cidade)
+								[ ] Viajante ( Fields )
+								[ ] Placas
+								[ ] Refinadora Basica
+								[ ] Restauradora (Itens)						
+	
+				(A.4) Isto: 	[ ] Armazem	
+								[ ] Estalagem (save Point)
+								[ ] Estilista
+								[ ] Viajante ( Fields )
+								[ ] Placas
+								[ ] Refinadora Intermediaria
+								[ ] Restauradora (Itens)
+								[ ] Removedor de Encantamentos ( Cartas )
+								
+				(A.5) Ursos: 	[ ] Armazem	
+								[ ] Estalagem (save Point)
+								[ ] Curandeira
+								[ ] Estilista
+								[ ] Resetadora
+								[ ] Placas
+								[ ] Refinadora Especial
+	
+			(B) Adicionado Signboard nos Seguintes NPC's:
+				(B.1) Ayumi ( Estalagem Academia Shinobi)
+				
+			(C) Adicionado Info Icon nos NPC's:
+				(C.1) Armazem shinobi (Academia)
+				
+			(D) Adicionado Mapas no Pais de Isto, substituindo os anteriores sendo eles:
+				(D.1) gef_fild08
+				(D.2) gef_fild14
+				
+			(E) Portais criados acompanhando as mudanças do item "D" nos mapas:
+				(E.1) gef_fild08
+				(E.2) gef_fild14
+				(E.3) moc_fild03
+				
+			(F) Corrigido na texture os novos locais dos portais seguindo as mudanças dos itens "D" e "E";
+			(G) Corrigo a cor dos portais das textures referentes a cidades:
+				(G.1) A nova cor é "Azul" para portais com entradas para as cidades.
+				
+			(H) Adicionada NPC "Curandeira" no mapa "Treinamento" para ajudar no UP.
+			
+(2) Atualizações do Emulador:
+
+		(NPC)
+		
+		(NPC.A) Corrigido Script do NPC para vips:
+			(NPC.A.1) Removido timer de espera no NPC "Curandeira" para 0s (Permanece 2.5s Para players Free)
+			(NPC.A.2) Corrigido incoerências com linhas de codigos
+			(NPC.A.3) Removido Falas para evitar flood, NPC continuaram mandando avisos via "PM" ao realizar determinados serviços
+
+		(NPC.B) Corrigo bug das varias @cost e @descont nos NPC's de Prestação de Serviço.
+			(NPC.B.1) Criada uma variavel para cada NPC'S de serviço.
+			
+		(NPC.C) Criada interação para novatos ao utilizarem NPC pela primeira vez.
+		
+		(NPC.D) Descoberta uma forma de evitar uso desnecessario de linhas de dialogo.
+			(NPC.D.1) Mover o titulo do NPC para o meio 
+			
+(3) Atualizações do Client Side:		
+
+		(Sprite)
+				
+		(Sprite.A) Adicionado NPC's Com tema de naruto:
+			* Varios, *requer auditoria*
+			
+		(Sprite.B) Corrigido bug com a falta da sprite do NPC 4_F_SON.
+		

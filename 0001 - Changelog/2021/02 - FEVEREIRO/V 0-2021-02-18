@@ -1,0 +1,34 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////															    										  /////
+////      //////    //\\     /////////  ////////  //   //     /\    //  /////// ///////  /////   //////		 /////
+////     //   //   //  \\       //     //        //   //     //\\  //  //   //    //	//	    //	        /////
+////    ///////   // // \\     //     //        ///////     //  \\//  //   //    //    /////   //////	   /////
+////   //        //      \\   //     //        //   //     //    \/  //	  //	//    //		  //      /////
+////  //        //        \\ //     ///////// //   //     //        ///////	   //	 /////   //////		 /////   
+////													      									        /////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+____________________________________
+Patch Notes V ALPHA.18.02.2021
+
+			///////////////////
+			//     CONF      //
+			///////////////////
+			
+			
+(A) Atualizações Emulador / Conf:
+
+	(1) Alterada o mapa "padrão" de prontera para louyang(academia shinobi)
+	
+	// Default map if character is in not-existing map when loaded.
+	default_map: louyang
+	default_map_x: 217
+	default_map_y: 68	
+	
+	(2) Alterado o mapa inicial para Louyang ( Academia Shinobi )
+	start_point: louyang,217,68
+	
+(B) Atualizações Mapa Mundo:
+	
+	(1) Alterada Pay_gld para louyang (academia Ninja) 
+	(2) Adicionado as Legendas no mini-mapa da Academia 
