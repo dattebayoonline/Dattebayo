@@ -1,0 +1,101 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////															    										  /////
+////      //////    //\\     /////////  ////////  //   //     /\    //  /////// ///////  /////   //////		 /////
+////     //   //   //  \\       //     //        //   //     //\\  //  //   //    //	//	    //	        /////
+////    ///////   // // \\     //     //        ///////     //  \\//  //   //    //    /////   //////	   /////
+////   //        //      \\   //     //        //   //     //    \/  //	  //	//    //		  //      /////
+////  //        //        \\ //     ///////// //   //     //        ///////	   //	 /////   //////		 /////   
+////													      									        /////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+_____________________________
+Patch Notes V ALPHA.01.03.2021
+
+			 //////////////////////////
+			///  DATTEBAYO ONLINE  ///
+		   //////////////////////////	
+		   
+(1) Atualizações Mapa Mundo:
+
+			(A) Iniciado processo de implementação dos NPC's de Serviços nos mapas:
+				(A.1) Academia: [X] Armazem
+								[X] Estalagem (save Point)
+								[X] Curandeira
+								[X] Estilista
+								[X] Resetadora
+								[X] Placas de Informações com Teleporte (Cidade)
+								[X] Placas
+								[X] Refinadora Basica (+4)
+								[X] Restauradora (Itens)
+	
+			(B) Adicionado Signboard nos Seguintes NPC's:
+				(B.1) Sumire, a Medica
+				(B.2) Armazem Shinobi
+				(B.3) Resetadora
+				(B.4) Leo, O Reparado
+				(B.5) Kham, o Ferreiro
+				(B.6) Hokage
+				(B.7) Kazekage
+				(B.8) Placa Alerta ( Apenas Players )
+				(B.9) Evento Recall ( Apenas Players )
+ 				
+			(C) Adicionado Lojas Shinobis:
+				(C.1) Suplementos ( Ferreiro - Academia  )
+				(C.2) Ferramentas Ninjas ( Ferreiro - Academia )
+				
+			(D) Adicionado os Seguintes NPC's na Sala STAFF
+				(D.1) Miaulertas (Apenas STAFF) (NPC de controle de Punições)
+				(D.2) ManuCAT (Apenas STAFF) (NPC de controle de Manutenções)
+				(D.3) RecallCAT ( Apenas STAFF) ( NPC de controle de Eventos)
+				(D.4) Alertas ( NPC para checagem de Alertas) ( Duplicado em locais Publicos
+				
+			(E) Adicionado os seguintes NPC's na Academia Shinobi ( Cidade)
+				(E.1) Hokage 
+				(E.2) Kazekage
+				(E.3) Academia ( Varios NPC's da Academia)
+				(E.4) Livro (Biblioteca) (readbook 41500) ( Tutorial Interface)				
+				
+			
+(2) Atualizações do Emulador:
+
+		(NPC)
+		
+		(NPC.A) NPC's Serviços
+			(NPC.A.1) Correções Sistematicas no script de Resetadora
+			
+		(NPC.B) NPC Ferreiro Kham ( Refinadora )
+			(NPC.B.1) Criado do Zero seguindo a seguinte logica
+				* Apenas evoluir até +4
+				* Para evoluir do +3 para o +4 requer item "Anvil" (ID 986)
+				* A chance de perder o item aumenta a cada nivel
+				* Adicionado frases de reply do sistema e efeitos de falha e sucesso.
+				* NPC fala para players VIP 
+				* Custo por nivel: 1 - 5.000z
+								   2 - 10.000z
+								   3 - 25.000z
+								   4 - 50.000z + Anvil		
+				* NPC Reconhece o Nivel de refinamento
+			
+		(NPC.C) O Basico da Interface ( Livro )	
+			(NPC.C.1) Criado do Zero seguindo a seguinte logica
+				* Função "readbook" com livro ID 41500 ( Item Criado )
+				* Sua utilidade e de ter um FAQ a disposição dos players
+		
+		(NPC.D) Adicionado os seguintes NPC's Para implementação e COrreções Futuras:
+			* academia.txt
+			* escolha_vila.txt
+			* books.txt
+			* fortune.txt
+			* alertas.txt
+			* manutencao.txt
+			* NpcRecall.txt
+		
+		(ITEM_DB)
+		
+		(ITEM_DB.A) Criado Item 41500 - Livro O basico Da interface
+			(ITEM_DB.A.1) Corrigido Descrição no Iteminfo do system
+			
+		(ITEM_DB.B) Separado e catalogado itens de "comida" com efeitos de Buff para implementação
+		
+			
+
+		
