@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////															    										  /////
+////      //////    //\\     /////////  ////////  //   //     /\    //  /////// ///////  /////   //////		 /////
+////     //   //   //  \\       //     //        //   //     //\\  //  //   //    //	//	    //	        /////
+////    ///////   // // \\     //     //        ///////     //  \\//  //   //    //    /////   //////	   /////
+////   //        //      \\   //     //        //   //     //    \/  //	  //	//    //		  //      /////
+////  //        //        \\ //     ///////// //   //     //        ///////	   //	 /////   //////		 /////   
+////													      									        /////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+_____________________________
+Patch Notes V ALPHA.03.03.2021
+
+			 //////////////////////////
+			///  DATTEBAYO ONLINE  ///
+		   //////////////////////////	
+		   
+(1) Atualizações Mapa Mundo:
+
+			(A) Finalizado processo de implementação dos NPC's de Serviços nos mapas:
+	
+			(B) Adicionado Signboard nos Seguintes NPC's:
+				(B.1) Tsunade, Hokage ( Escolha sua Vila )
+ 				(B.2) Gaara, Kazekage ( Escolha sua Vila )
+				(B.3) Dattebayo, Alertas
+				(B.4) Dattebayo, Eventos
+									
+				
+			
+(2) Atualizações do Emulador:
+
+		(NPC)
+		
+		(NPC.A) NPC's Serviços
+			(NPC.A.1) Correções no Sistema de codificação de texto de UTF-8 para ANSI
+			(NPC.A.2) Iniciado processo de formatação de texto dos NPC's
+			
+		(NPC.B) NPC Tsunade,Hokage
+			(NPC.B.1) Iniciado Modelo de atuação do NPC 
+			(NPC.B.2) NPC terá 2 funções, Informar e Incentivar o player a escolher sua vila.
+			(NPC.B.3) Seu unico requisito será de completar a academia( Quest )
+
+		(NPC.C) NPC Miaulertas:
+			(NPC.C.1) NPC convertido para "Func" para ser melhor otimizado
+			(NPC.C.2) NPC separado em 2 sendo:
+						* 1º Para Gerenciamento ( Apenas Staff)
+						* 2º Para Checagem de Alertas ( Apenas Players )
+						
+			(NPC.C.3) Corrigido erros de estrutura do NPC *Sem detalhes*
+			(NPC.C.4) Limite de 10 Alertas para ser Banido ( NPC bane até players lvl 99 - ADMIN )
+			(NPC.C.5) Apenas GM podem usar ( GM lvl 50 )
+			
+		(NPC.D) NPC ManuCAT:
+			(NPC.D.1) Alterada estrutura do NPC ( antes utilizado Via PM ) para um NPC Fisico ( Apenas STAFF pode usar ).
+
+		(NPC.E) NPC RecallCAT:
+			(NPC.E.1) Atlerada estrutura do NPC para se adequar as exigências do servidor
+			(NPC.E.2) Correções basicas de Erros de português
+		
+(3) Atualizações de Data Base:		
+		
+		(Login table)
+		
+		(Login table.A) NPC Alertas
+			(Login table.A.1) Seguindo a atualização (NPC.C.3) do dia 03/03 foi atualizada a database para melhor funcionamento do NPC
+								* A atualização segue nas abas *Alertas* e *Ban*
+
+(4) Atualizações de Cient Side:
+
+		(msgstringtable)
+		
+		(msgstringtable.A) Traduzida varias frases do servidor (KR e EN para PT)
+		
+		(Texture)
+			
+		(Texture.A) illust - Cutin
+			(Texture.A.1) Adicionada Varias cutins seguindo a atualização (NPC.B) do dia 03/03/2021
+			
+(5) Atualizações do discord:
+
+		(BOT - Dattebayo)
+			
+		(BOT - Dattebayo.A) Corrigido erros de package que impediam o funcionamento do BOT	
+
+		
