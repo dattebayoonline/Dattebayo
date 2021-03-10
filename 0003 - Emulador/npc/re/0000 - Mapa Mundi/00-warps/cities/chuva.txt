@@ -1,0 +1,71 @@
+//Permissão Rank A Konoha e Suna
+
+moc_fild02,350,339,0	script	 #enterchuva0	45	,4,4,{
+
+	.@npc$ = "^7B68EE[ Pais da Chuva ]^000000";
+
+	if (enterchuva == 1) goto entrar2;
+	if (countitem(662) >= 1) goto entrar;
+	else mes .@npc$;
+	mes " ";
+	mes "A Fronteira esta temporariamente ^FF6961BLOQUEADA^000000.";
+	close;
+
+
+	entrar:
+	set enterchuva,1;
+	mes .@npc$;
+	mes " ";
+	mes "^FFA500"+strcharinfo(0)+"^000000, O pais da chuva esta em plena guerra civil,uma area ^FF0000Rank S^000000, Deseja prosseguir?";
+	menu "Quero Entrar",entrar2,"Nao Estou preparado",saida,"Nao desejo mais receber essa mensagem",naoquero;
+	next;
+	
+	entrar2:
+	warp "ein_fild09",295,63;
+	end;
+	
+	naoquero:
+	
+	next;
+	set enterchuva,1;
+	mes .@npc$;
+	mes " ";
+	mes "Apenas aqueles que sofreram da dor podem julgar.";
+	next;
+	warp "ein_fild09",295,63;
+	
+	saida:
+	next;
+	mes .@npc$;
+	mes " ";
+	mes "Voce so vai encontrar apenas ^FF0000D O R!^000000 aqui.";
+	close;
+
+	end;
+
+}
+
+ein_fild09,295,44,0	warp	enterchuva0-1	2,2,moc_fild02,350,333
+
+// Estalagem
+ein_in01,264,105,0	warp	barseiscaminhos0	1,1,ein_fild09,183,61
+ein_fild09,183,57,0	warp	barseiscaminhos0-1	1,1,ein_in01,268,105
+
+ein_in01,289,89,0	script	 #barseiscaminhos1	45	,1,1,{
+
+	.@npc$ = "^7B68EE[ Bar dos Seis Caminhos ]^000000";
+
+	if (nukenin == 1) goto entrar;
+	else mes .@npc$;
+	mes " ";
+	mes "Esta area e apenas para ^FF0000Nukenins^000000!.";
+	mes " ";
+	mes "Caia fora enquanto sua vida ainda e sua.";
+	close;
+
+	entrar:
+	warp "ein_in01",198,223;
+	end;
+} 
+
+ein_in01,194,223,0	warp	barseiscaminhos1-1	1,1,ein_in01,285,89

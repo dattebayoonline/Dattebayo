@@ -1,0 +1,229 @@
+//===== rAthena Script =======================================
+//= Izlude Warp Script
+//===== By: ==================================================
+//= Athena (1.0), Nana (1.1)
+//===== Current Version: =====================================
+//= 1.4
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= Warp Points for Izlude
+//===== Additional Comments: =================================
+//= 1.3 Added warps to Izlude Airship [Justin84]
+//= 1.4 Minor correction on airport warps
+//============================================================
+
+//= Louyang - Academia ==============================================
+// Entrada
+
+moc_fild03,69,341,0	script	 #entradaacademia	45,2,2,{
+
+	.@npc$ = "^000080[ Academia Shinobi ]^000000";
+
+	if (academiaportalentrada == 1) goto entrar;
+	mes .@npc$;
+	mes " ";
+	mes "Voce Aqui? que prazer ter voce de volta ^FFA500"+strcharinfo(0)+"^000000 Jovem Shinobi, .";
+	next;
+	mes .@npc$;
+	mes " ";
+	mes "Espero que a Academia Shinobi lhe sirva da melhor forma possivel!";
+	menu "Quero Entrar",entrar,"Nao Estou preparado",saida,"Nao desejo mais receber essa mensagem",naoquero;
+
+	entrar:
+	
+	warp "louyang",218,50;
+	end;
+	
+	saida:
+	next;
+	mes .@npc$;
+	mes " ";
+	mes "Estaremos ansioso para te-lo de volta.";
+	close;
+	
+	naoquero:
+	next;
+	set academiaportalentrada,1;
+	mes .@npc$;
+	mes " ";
+	mes "Que assim seja meu senhor, Bem vindo a gloriosa Academia Shinobi.";
+	next;
+	warp "louyang",218,50;
+
+	end;
+
+}
+
+louyang,218,19,0	script	 #saidaacademia	45,5,5,{
+
+	.@npc$ = "^000080[ Academia Shinobi ]^000000";
+
+	if (academiaportalsaida == 1) goto entrar2;
+	if(baselevel <= 49) { goto sembandana; }	
+	else mes .@npc$;
+	mes " ";
+	mes "^FFA500"+strcharinfo(0)+"^000000, Grandes perigos o aguardam fora dos portoes da Academia.";
+	next;	
+	mes .@npc$;
+	mes " ";
+	mes "Fique atento pois existem ninjas que gostam de matar novatos.";
+	menu "Sair da Academia",entrar2,"Nao Estou preparado",saida,"Nao desejo mais receber essa mensagem",naoquero;
+
+	entrar2:	
+	
+	warp "moc_fild03",69,335;
+	end;
+	
+	naoquero:
+	
+	next;
+	set academiaportalsaida,1;
+	mes .@npc$;
+	mes " ";
+	mes "Que assim seja meu senhor, Grandes aventuras estao por vir.";
+	next;
+	warp "moc_fild03",69,335;
+
+	
+	sembandana:
+	
+	next;
+	mes .@npc$;
+	mes " ";
+	mes "Voce nao esta preparado!!";
+	mes "Voce precisa pelo menos receber sua^FF0000 Bandana^000000 antes de sair da Academia.";
+	close;
+
+	saida:
+	
+	next;
+	mes .@npc$;
+	mes " ";
+	mes "C O V A R D E!!!! ";
+	close;
+
+	end;
+
+}
+
+
+// Treinamento
+louyang,37,271,0	warp	Acad01	2,2,treinamento,78,171
+treinamento,78,176,0	warp	Acad01-1	2,2,louyang,42,272
+
+// Sala GM
+louyang,279,168,0	warp	Acad02	1,1,reuniao,54,29
+reuniao,54,26,0	warp	Acad02-1	1,1,louyang,279,162
+
+// Biblioteca
+louyang,309,81,0	warp	Acad03	1,1,yuno_in04,33,127
+yuno_in04,33,130,0	warp	Acad03-1	1,1,louyang,309,77	
+
+// Estalagem
+louyang,136,97,0	warp	Acad04	1,1,lou_in02,57,174
+lou_in02,57,170,0	warp	Acad04-1	1,1,louyang,140,101
+
+// Ferreiro
+louyang,145,175,0	warp	Acad05	1,1,lou_in02,125,168
+lou_in02,125,164,0	warp	Acad05-1	1,1,louyang,145,171
+
+// Sala VIP
+
+louyang,134,244,0	warp	Acad06	1,1,lou_in02,189,78
+lou_in02,188,74,0	warp	Acad06-1	1,1,louyang,138,244
+
+// Academia
+
+louyang,218,253,0	warp	Acad07	3,3,academia,102,13
+academia,102,8,0	warp	Acad07-1	2,2,louyang,218,248
+
+academia,114,44,0	warp	acad_in01	2,2,academia,148,36
+academia,145,36,0	warp	acad_in01-1	2,2,academia,110,44
+
+academia,114,62,0	warp	acad_in02	2,2,academia,148,76
+academia,145,76,0	warp	acad_in02-1	2,2,academia,110,62
+
+academia,95,44,0	warp	acad_in03	2,2,academia,67,36
+academia,70,36,0	warp	acad_in03-1	2,2,academia,98,44
+
+academia,95,62,0	warp	acad_in04	2,2,academia,69,76
+academia,72,76,0	warp	acad_in04-1	2,2,academia,98,62
+
+academia,125,22,0	warp	acad_in05	1,1,academia,79,148
+academia,79,145,0	warp	acad_in05-1	1,1,academia,125,19
+
+academia,105,91,0	warp	acad_in06	1,1,acad_01,101,148
+acad_01,101,143,0	warp	acad_in06-1	1,1,academia,105,86
+
+//
+//=============================================================
+// Estalagem Academia
+//=============================================================
+
+lou_in02,79,190,0	script	Quarto Estalagem::portalestalagem	45,2,2,{
+
+.@npc$ = "             ^008000[ Estalagem - Quartos ]^000000";
+
+	if (primeiravezarmazemquarto == 0) { goto dialogo1;}
+	else {goto sorteio;}
+	
+	sorteio:
+	set @a,rand(1,2);
+	
+					if(@a == 1) { goto dialogo2;}
+					if(@a == 2) { goto dialogo3;}
+
+dialogo1:
+	set primeiravezarmazemquarto,1;
+	mes .@npc$;
+	mes "Os Quartos estao sendo limpos no momento.";
+	mes " ";
+	mes "Volte mais tarde";
+	close;
+	
+dialogo2:
+	mes .@npc$;
+	mes "Vai Achar o que fazer cara, vai upar seu fracote!!!";
+	close;
+	
+dialogo3:
+	mes .@npc$;
+	mes ". . . ";
+	close;
+	
+}
+
+lou_in02,36,190,0	script	Quarto Estalagem::portalestalagem2	45,2,2,{
+
+.@npc$ = "             ^008000[ Estalagem - Quartos ]^000000";
+
+	if (primeiravezarmazemquarto == 0) { goto dialogo1;}
+	else {goto sorteio;}
+	
+	sorteio:
+	set @a,rand(1,2);
+	
+					if(@a == 1) { goto dialogo2;}
+					if(@a == 2) { goto dialogo3;}
+
+dialogo1:
+	set primeiravezarmazemquarto,1;
+	mes .@npc$;
+	mes "Os Quartos estao sendo limpos no momento.";
+	mes " ";
+	mes "Volte mais tarde";
+	close;
+	
+dialogo2:
+	mes .@npc$;
+	mes "Vai Achar o que fazer cara, vai upar seu fracote!!!";
+	close;
+	
+dialogo3:
+	mes .@npc$;
+	mes ". . . ";
+	close;
+	
+}
+

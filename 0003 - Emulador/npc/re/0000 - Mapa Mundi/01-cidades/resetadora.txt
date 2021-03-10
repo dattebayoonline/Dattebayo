@@ -1,0 +1,144 @@
+// ===== R-Athena - DATTEBAYO =======================================
+// == Kira ( NPC - Script )
+// ===== Categoria: ===========================================
+// == Utilidade Publica
+// ===== Idioma: ==============================================
+// == Português (Brasil)
+// ===== Versão Atual: ========================================
+// == 1.0 (24/02/2021)
+// ===== Compactível Com: =====================================
+// == Rathena
+// ===== Descrição Parcial: ===================================
+// == NPC armazem com Desconto para PASSE e VIP FREE
+// ============================================================
+prontera,149,159,4	script	Resetadora::reset	124,{
+
+set @costResetadora,7500;
+set @descontResetadora,3750;
+set .@t, 3,5;	// Delay Seconds.
+.@npc$ = "                     ^008000[ Resetadora ]^000000";
+.@zeny$ = "Com ^800080Passe^000000 você paga apenas ^800080" + (@costResetadora-@descontResetadora) + "z^000000 e ^FF0000VIP não paga!^000000";
+
+
+	if (primeiravezresetadora == 0) { goto novato;}
+	else {goto veterano;}
+	
+	veterano:
+	if (getgmlevel() >= 5) {goto vip;}
+	mes .@npc$;
+	mes "Eu sou a Reset Girl, eu possuo um ninjutsu unico que ^0000FFreseta seus atributos^000000!";
+	mes " ";
+	mes " Meus serviços não são de graça, eles custam ^FF0000" + @costResetadora + "z^000000";
+	next;	
+	mes .@npc$;
+	mes .@zeny$;
+	mes " ";	
+	mes "Deseja utilizar meus serviços?";
+	menu "^FF0000Pagar^000000",sim,"Nao!",nem;
+
+	sim:
+	if (getgmlevel() >= 5) { goto vip; }
+	if (countitem(6813) >= 1) { goto passe; }
+	if (0 >= (@costResetadora - Zeny)) { goto rica; }
+	if (0 <= (@costResetadora - Zeny)) { goto pobre; }
+	else { 	mes .@npc$;
+			mes " ";
+			mes "Um erro inesperado ocorreu!";
+			close;}
+
+	pobre:
+	next;
+	mes .@npc$;
+	mes "Voce nao possui zeny suficiente meus serviços";
+	mes " ";
+	mes "Torne-se ^FF0000VIP^000000 agora mesmo e utilize nossos servicos de graça!";
+	close;
+	
+	rica:
+	next;
+	set Zeny,Zeny - @costResetadora;
+	mes .@npc$;
+	mes "Espere alguns segundos enquanto eu aplico meu ninjutsu...";
+	while ( .@t ) {
+		mes ""+ .@t +" segundo"+ ( ( .@t > 1 ) ? "s" : "" ) +".";
+		sleep2 1000 ;
+		set .@t, .@t - 1;
+					}
+	ResetStatus;
+	dispbottom "[Servidor] Dattebayo: Seus Status foram resetados.";
+	dispbottom "[Servidor] Dattebayo: -" + @costResetadora + "z";
+	close;	
+							
+	passe:
+	next;
+	mes .@npc$;
+	mes "Vejo que voce possui o ^800080Passe de comerciante^000000.";
+	mes " ";
+	mes "Vamos cobrar apenas ^800080" + (@costResetadora-@descontResetadora) + "z^000000 de voce... ";
+	if (0 >= ((@costResetadora-@descontResetadora) - Zeny)) { goto rica2; }
+	if (0 <= ((@costResetadora-@descontResetadora) - Zeny)) { goto pobre2; }
+	
+	pobre2:
+	next;
+	mes .@npc$;
+	mes "Desculpe voce nao possui zeny suficiente.";
+	mes " ";
+	mes "Torne-se ^FF0000VIP^000000 agora mesmo e utilize nossos servicos de graça!";
+	close;
+	
+	rica2:
+	next;
+	set Zeny,(Zeny - (@costResetadora - @descontResetadora));
+	mes .@npc$;
+	mes "Espere alguns segundos enquanto eu aplico meu ninjutsu...";
+	while ( .@t ) {
+		mes ""+ .@t +" segundo"+ ( ( .@t > 1 ) ? "s" : "" ) +".";
+		sleep2 1000 ;
+		set .@t, .@t - 1;
+					}
+	ResetStatus;
+	dispbottom "[Servidor] Dattebayo: Seus Status foram resetados.";
+	dispbottom "[Servidor] Dattebayo: -" + @costResetadora + "z";
+	close;
+									
+									
+	vip:							
+	if (getgmlevel() >= 5) {	ResetStatus;
+								dispbottom "[Servidor] Dattebayo: Seus Status foram resetados.";
+								close;	}
+
+
+	novato:
+	mes .@npc$;
+	mes "Eu sou a Reset Girl, eu possuo um ninjutsu unico que ^0000FFreseta seus atributos^000000!";
+	mes " ";
+	mes "Por isso me chamam assim, Reset Girl... HIHIHIHIHIIH!";
+	mes " ";
+	mes "Deseja utilizar meus serviços?";
+	menu "Claro",novato2,"Nao!",nem;
+	
+	novato2:
+	next;
+	mes .@npc$;
+	mes "A primeira vez será de ^FF0000graça^000000.";
+	mes " ";
+	mes "Apos isso torne-se ^FF0000VIP^000000 para utilizar meus serviços gratuitamente.";
+	next;
+	set primeiravezresetadora,1;
+	mes .@npc$;
+	mes "Espere alguns segundos enquanto eu aplico meu ninjutsu...";
+	while ( .@t ) {
+		mes ""+ .@t +" segundo"+ ( ( .@t > 1 ) ? "s" : "" ) +".";
+		sleep2 1000 ;
+		set .@t, .@t - 1;
+					}
+	ResetStatus;
+	dispbottom "[Servidor] Dattebayo: Seus Status foram resetados.";
+	close;
+	
+	nem:
+	close;
+	
+end;
+}
+louyang,135,176,3	duplicate(reset)	 #1	575
