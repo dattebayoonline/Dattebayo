@@ -1,8 +1,0 @@
--	script	PackIniciante	-1,{
-
-query_sql "SELECT `account_id`  FROM `login` WHERE `account_id` > 2002812",@exame,@limite;
-
-OnPCLoginEvent:
-
-
-}
