@@ -1,0 +1,553 @@
+# This file is a part of rAthena.
+#   Copyright(C) 2019 rAthena Development Team
+#   https://rathena.org - https://github.com/rathena
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###########################################################################
+# Quest Database
+###########################################################################
+#
+# Quest Settings
+#
+###########################################################################
+# - Id              Quest ID.
+#   Title           Quest title.
+#   TimeLimit       Amount of time before the quest expires. (Default: 0)
+#                   Use a number following by "d" for day(s), "h" for hour(s), "mn" for minute(s), and "s" for second(s).
+#                   Specify with "+" for how long until the quest expires.
+#                   Specify without "+" for the exact time the quest expires using "d" (optionnal), [0-23]"h" (required), [0-59]"mn" (optionnal), [0-59]"s" (optionnal) format.
+#                   Please note the number before "d" only shift the exact timer to the given day(s).
+#   Targets:        Quest objective target. (Default: null)
+#     - Mob         Monster to kill.
+#       Count       Amount of monsters to kill.
+#   Drops:          Quest item drop targets. (Default: null)
+#     - Mob         Monster to kill. 0 will apply to all monsters. (Default: 0)
+#       Item        Item to drop.
+#       Count       Amount of items that will drop. Non-stackable items default to 1. (Default: 1)
+#       Rate        Item drop rate. (10000 = 100%)
+###########################################################################
+Header:
+  Type: QUEST_DB
+  Version: 1
+
+Body:
+  - Id: 62238
+    Title: Obito
+
+  - Id: 30010
+    Title: Boiana
+    Targets:
+      - Mob: COYOTE
+        Count: 100
+        
+  - Id: 30011
+    Title: RankE1
+    Targets:
+      - Mob: COYOTE
+        Count: 50
+ 
+  - Id: 30012
+    Title: RankE2
+    Targets:
+      - Mob: Elder Pedron [ Rank E ]
+        Count: 50
+
+  - Id: 30013
+    Title: RankE3
+    Targets:
+      - Mob: Tarin [ Rank E ]
+        Count: 50
+
+  - Id: 30014
+    Title: RankE4
+    Targets:
+      - Mob: RODA_FROG
+        Count: 50
+
+  - Id: 30015
+    Title: RankE5
+    Targets:
+      - Mob: RODA_FROG
+        Count: 50
+      - Mob: Tarin [ Rank E ]
+        Count: 50  
+
+  - Id: 30016
+    Title: RankE6
+    Targets:
+      - Mob: Elder Pedron [ Rank E ]
+        Count: 100
+      - Mob: COYOTE
+        Count: 100
+        
+  - Id: 30017
+    Title: RankD1
+    Targets:
+      - Mob: Corvo Negre [ Rank D ]
+        Count: 100  
+        
+  - Id: 30018
+    Title: RankD2
+    Targets:
+      - Mob: SNAKE
+        Count: 100
+        
+  - Id: 30019
+    Title: RankD3
+    Targets:
+      - Mob: NIGHTMARE_TERROR
+        Count: 100 
+
+  - Id: 30020
+    Title: RankD4
+    Targets:
+      - Mob: ECHIO 
+        Count: 100 
+        
+  - Id: 30021
+    Title: RankD5
+    Targets:
+      - Mob: ECHIO
+        Count: 100
+      - Mob: SNAKE
+        Count: 100         
+          
+  - Id: 30022
+    Title: RankD6
+    Targets:
+      - Mob: Corvo Negre [ Rank D ]
+        Count: 100
+      - Mob: NIGHTMARE_TERROR
+        Count: 100        
+
+  - Id: 30023
+    Title: RankC1
+    Targets:
+      - Mob: Bandido [ Rank C ]
+        Count: 100  
+        
+  - Id: 30024
+    Title: RankC2
+    Targets:
+      - Mob: VERIT
+        Count: 100
+        
+  - Id: 30025
+    Title: RankC3
+    Targets:
+      - Mob: IMP
+        Count: 100 
+
+  - Id: 30026
+    Title: RankC4
+    Targets:
+      - Mob: GEMINI 
+        Count: 100 
+        
+  - Id: 30027
+    Title: RankC5
+    Targets:
+      - Mob: WILOW
+        Count: 100
+      - Mob: RAWREL
+        Count: 100         
+          
+  - Id: 30028
+    Title: RankC6
+    Targets:
+      - Mob: Bandido [ Rank C ]
+        Count: 100
+      - Mob: DEVIRUCHI
+        Count: 100  
+
+  - Id: 30029
+    Title: RankB1
+    Targets:
+      - Mob: THARA_FROG
+        Count: 100  
+        
+  - Id: 30030
+    Title: RankB2
+    Targets:
+      - Mob: SALAMANDER
+        Count: 100
+        
+  - Id: 30031
+    Title: RankB3
+    Targets:
+      - Mob: SWORD_GUARDIAN
+        Count: 100 
+
+  - Id: 30032
+    Title: RankB4
+    Targets:
+      - Mob: BOW_GUARDIAN
+        Count: 100 
+        
+  - Id: 30033
+    Title: RankB5
+    Targets:
+      - Mob: THARA_FROG
+        Count: 100
+      - Mob: PICKY
+        Count: 100         
+          
+  - Id: 30034
+    Title: RankB6
+    Targets:
+      - Mob: SALAMANDER
+        Count: 100
+      - Mob: PORING_
+        Count: 100
+
+  - Id: 30035
+    Title: RankA1
+    Targets:
+      - Mob: SEYREN
+        Count: 200  
+        
+  - Id: 30036
+    Title: RankA2
+    Targets:
+      - Mob: GOAT
+        Count: 200
+        
+  - Id: 30037
+    Title: RankA3
+    Targets:
+      - Mob: HARWORD
+        Count: 200 
+
+  - Id: 30038
+    Title: RankA4
+    Targets:
+      - Mob: KAVAC
+        Count: 200 
+        
+  - Id: 30039
+    Title: RankA5
+    Targets:
+      - Mob: RYBIO
+        Count: 200
+      - Mob: HARWORD
+        Count: 200         
+          
+  - Id: 30040
+    Title: RankA6
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200
+
+  - Id: 30041
+    Title: TaiAvan
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200        
+
+  - Id: 30042
+    Title: TaiAvanc
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+      - Mob: RYBIO
+        Count: 200
+
+  - Id: 30043
+    Title: TaiAvanc
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30044
+    Title: TaiAvanc
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30045
+    Title: MedAvan
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200        
+
+  - Id: 30046
+    Title: MedAvan
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+      - Mob: RYBIO
+        Count: 200
+
+  - Id: 30047
+    Title: MedAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30048
+    Title: MedAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30078
+    Title: MedAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30049
+    Title: GenAvan
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200        
+
+  - Id: 30050
+    Title: GenAvan
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+      - Mob: RYBIO
+        Count: 200
+
+  - Id: 30051
+    Title: GenAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30052
+    Title: GenAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30053
+    Title: VelAvan
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200        
+
+  - Id: 30054
+    Title: VelAvan
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+      - Mob: RYBIO
+        Count: 200
+
+  - Id: 30055
+    Title: VelAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30056
+    Title: VelAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30057
+    Title: DotAvan
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200        
+
+  - Id: 30058
+    Title: DotAvan
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+      - Mob: RYBIO
+        Count: 200
+
+  - Id: 30059
+    Title: DotAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30060
+    Title: DotAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30061
+    Title: FutAvan
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200        
+
+  - Id: 30062
+    Title: FutAvan
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+      - Mob: RYBIO
+        Count: 200
+
+  - Id: 30063
+    Title: FutAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30064
+    Title: FutAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30065
+    Title: KatAvan
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200        
+
+  - Id: 30066
+    Title: KatAvan
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+      - Mob: RYBIO
+        Count: 200
+
+  - Id: 30067
+    Title: KatAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30068
+    Title: KatAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30069
+    Title: RaiAvan
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200        
+
+  - Id: 30070
+    Title: RaiAvan
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+      - Mob: RYBIO
+        Count: 200
+
+  - Id: 30071
+    Title: RaiAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30072
+    Title: RaiAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30073
+    Title: SuiAvan
+    Targets:
+      - Mob: KAVAC
+        Count: 200
+      - Mob: INJUSTICE
+        Count: 200        
+
+  - Id: 30074
+    Title: SuiAvan
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+      - Mob: RYBIO
+        Count: 200
+
+  - Id: 30075
+    Title: SuiAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 30076
+    Title: SuiAvan
+    Targets:
+      - Mob: GOAT
+        Count: 200
+      - Mob: SEYREN
+        Count: 200
+
+  - Id: 1261
+    Title: Cursed Swordman
+    TimeLimit: +23h

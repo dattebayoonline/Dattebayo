@@ -1,0 +1,47 @@
+//Permissão Rank C se for suna
+//Permissão Rank A se for Konoha
+
+lhz_fild02,166,367,0	script	 #enterursos0	45	,2,2,{
+
+	.@npc$ = "^D2691E[ Vila Oculta da Estrela ]^000000";
+
+	if (ursosportalentrada == 1) goto entrar2;
+	if (countitem(662) >= 1) goto entrar;
+	else mes .@npc$;
+	mes " ";
+	mes "A Fronteira esta temporariamente ^FF6961BLOQUEADA^000000.";
+	close;
+
+	entrar:
+	mes .@npc$;
+	mes " ";
+	mes "Bem Vindo senhor ^FFA500"+strcharinfo(0)+"^000000, ao glorioso ^DAA520Pais dos Ursos^000000.";
+	menu "Desejo Entrar",entrar2,"Nao estou confortavel.",saida,"Nao desejo mais receber essa mensagem",naoquero;
+
+	naoquero:
+	
+	next;
+	set ursosportalentrada,1;
+	mes .@npc$;
+	mes " ";
+	mes "Ursos nao lamentam nevascas, eles hibernam";
+	next;
+	warp "moc_ruins",71,24;
+	end;
+	
+	entrar2:
+	warp "moc_ruins",71,24;
+	end;
+	
+	saida:
+	next;
+	mes .@npc$;
+	mes " ";
+	mes "Que a ira do grande urso caia sobre voce!";
+	close;
+
+	end;
+
+}
+
+moc_ruins,71,19,0	warp	enterursos0-1	2,2,lhz_fild02,164,363
