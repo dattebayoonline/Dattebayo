@@ -14,23 +14,18 @@ Patch Notes V ALPHA.16.06.2021
 			///  DATTEBAYO ONLINE  ///
 		   //////////////////////////	
 		   
-(1) Atualizações de Emulador, Um novo Começo:
+(1) Atualizações de Emulador, PT2:
 
 			(A) Migração para o Emulador Atualizado.
-				(A.1) Packet 20180620 Fixado
-				(A.2) Removido os Status de Renewal do servidor
-					[-> Exp
-					[-> Drop
-					[-> Cast
-					[-> LVL DMG
-					[-> ASPD
-					[-> STATS				
+				
+				(A.1) Removidos mapas no maps_athena que não estão adicionados formalmente
+				(A.2) Desligado o sistema Roullete
+				(A.3) Corrigido a database "Alertas" e "Ban" do NPC de controle
+				(A.4) Corrigido divergências no script "Lojinhas.txt"
+				(A.5) Corrigido Erros de divergências nos nomes repetidos de scripts.
+				
+				
 
-				(A.3) Adicionado Mapas do Dattebayo 2018 ao Emulador 2021
-				(A.4) Alterado Start Inicial para os mapas lou_in02-X ( variantes 1 a 6 )
-				(A.5) Migrado os NPC's do Dattebayo 2018 para 2021
-
-			
 				
 	
 

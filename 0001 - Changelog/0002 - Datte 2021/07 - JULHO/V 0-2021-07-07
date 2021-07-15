@@ -8,22 +8,104 @@
 ////													      									        /////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 _____________________________
-Patch Notes V ALPHA.07.07.2021
+Patch Notes V ALPHA.07.07.2021 - 15/07/2021
 
 			 //////////////////////////
 			///  DATTEBAYO ONLINE  ///
 		   //////////////////////////	
 		   
-(1) Atualizações de npc'S, Um novo Começo:
+(1) Emulador-side
 
-	(A) Organização e separação de NPC's 
-	(B) Reestruturado os NPC's de Serviço com base em novos Conhecimentos
-	(C) Iniciado Processo de Story Mode 
-	(D) Limpeza geral no Quest_DB para criamos um novo inicio
-
-
+	(A) CONF
+		* Alterado o ponto de Inicio 
+	
+	(B) Database
+		*Quest DB- Removido todas as quest(ragnarok) e adicionada as quests(Dattebayo).
+			+Quest 1000 a 1009
+			+Criado Backup do Quest_DB
+		
+	(C) NPC's STAFF
+		*miaukira (Controle de STAFF/Lembretes)
+		*quest Manager (Adiciona, remove e completa quests)
+		*GMOnline (Diz quais staffs estão onlines / Para players)
+		
+	(D) NPC's VIP
+		*Mestre Ferreiro (Refina armas +4 com custo zeny)
+		
+	(E) NPC's Callfunc
+		*quest_on (Cria animação de quest recebida)
+		
+	(F) NPC's Quest (Epi 1)
+		*Quest Arco 1 ( Incompleta )
+			+ Atualmente encontra-se na Academia
+		*Quest secundaria arco 1
+	
+	(G) NPC's Serviços
+		*Reestrurado NPC's baseado em novos conhecimentos
 			
-				
+	(H) DESATIVADO TEMPORARIAMENTE PIN CODE
+
+(2) Client-side
+
+	(A) System
+		*OnGoingQuest
+			+ Zerado (Quests Ragnarok)
+			+ Criado Backup
+			+ Adicionada Quest 1000 a 1009
+		
+		*RecommendedQuestInfoList
+			+ Editada quest de Boas Vindas
+		
+		*Signboard
+			+Alterado nomes e icones das placas
+		
+		*towninfo
+			+Alterado icones e locais de legendas baseada na Alteração
+	(B) BGM
+		* Adicionada musicas de fundo nos seguintes mapas
+			+ louyang
+			+ treinamento
+			+ acad
+			+ lou_in02
+			+ lou_in01
+
+	(C) MSGString (Traduções)
+		*Traduziada msg do PINCODE
+		
+	(D) Interface
+		*Alterado botão "Iniciar" tela de Login
+		*Alterado tela de fundo (Login) Baseado na alteração 2-D
+		*Desativado o Icone Quest_on e Quest_OFF
+		
+	(F)	information (Legendas)
+		+Substituidos todos os icones de legendas de mapas
+		+Adicionado o Icone "warp"
+	
+	(G) Worldwide 
+		+Alterado os icones de legenda do mapa mundi
+	
+	(H) Adicionado Icone "STAFF" para signboards
+	
+	(I)
+	
+(3) Design
+	
+	(A) illust / cutin
+		*Rikudou
+		*Quest Recebida
+		*Tutorial (Menu, minimapa, item e quest)
+		*Ayumi
+	
+	(B) Information
+		* Criado icones Pixel art de Informações
+	
+
+(4) Premiações, eventos e afins
+
+	(A) NPC "Estranho" - Quest Secundaria
+		* Premiação = ITEM 19502
+	
+
 	
 
 			
